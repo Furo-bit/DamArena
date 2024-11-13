@@ -1,0 +1,1 @@
+Progetto per un esame di laurea magistrale. DamArena è un sito per giocare a dama con amici o con persone randomiche. E' possibile creare un profilo, organizzare tornei, visualizzare il proprio rank e molto altro ancora.
