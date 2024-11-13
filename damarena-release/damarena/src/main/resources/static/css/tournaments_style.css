@@ -1,0 +1,180 @@
+:root {
+    --button-width: 80px;
+}
+
+.join-button {
+    width: 100px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-items: center;
+    text-align: center;
+}
+
+.join-button i {
+    margin-right: 6px;
+}
+
+.join-button:hover {
+    background-color: #0056b3;
+}
+
+.join-button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.join-button:disabled:hover {
+    background-color: #ccc;
+}
+
+.leave-button {
+    width: 100px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-items: center;
+    text-align: center;
+}
+
+.leave-button i {
+    margin-right: 6px;
+}
+
+.leave-button:hover {
+    background-color: #b30000;
+}
+
+.leave-button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+.leave-button:disabled:hover {
+    background-color: #ccc;
+}
+
+.container-tournament {
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-tournament a {
+    margin-left: auto;
+    margin-right: 0;
+    color: black;
+    align-content: end;
+}
+
+thead {
+    cursor: none;
+}
+
+tr {
+    cursor: pointer;
+}
+
+.PlayersTable {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.PlayersTable th {
+    background-color: #8ce0f5;
+}
+
+.PlayersTable th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.remove-button {
+    width: auto;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.remove-button i {
+    margin-right: 5px;
+}
+
+.remove-button:hover {
+    background-color: #ff1a1a;
+    transform: scale(1.05);
+}
+
+.remove-button:focus {
+    outline: none;
+}
+
+.tournament-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+
+.tournament-header h2 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+}
+
+.tournament-header form {
+    margin-left: auto;
+    padding: 10px;
+}
+
+.tournament-header button {
+    margin-left: auto;
+    padding: 10px;
+    width: auto;
+}
+
+.winner-container {
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: goldenrod;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

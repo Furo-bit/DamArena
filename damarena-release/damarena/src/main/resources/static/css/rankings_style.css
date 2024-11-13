@@ -1,0 +1,67 @@
+.rankings-header {
+    background-color: transparent;
+    color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+th {
+    background-color: #8ce0f5;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+
+}
+
+.container-game-mode {
+    width: 40%;
+    margin: 0 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.return-link {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.return-image {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(261deg) brightness(103%) contrast(102%);
+}
+
+.rankings-body {
+    display: flex;
+    margin: 160px 40px;
+    justify-content: center;
+}
+
+.highlight {
+    background-color: #ff9a9e;
+}
+
+form {
+    justify-content: center;
+    text-align: center;
+}

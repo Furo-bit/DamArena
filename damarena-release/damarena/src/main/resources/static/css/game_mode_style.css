@@ -1,0 +1,217 @@
+:root {
+    --primary-color: #2196F3;
+    --primary-color-hover: #1976D2;
+    --secondary-color: #8ce0f5;
+    --hover-color: #f5f5f5;
+    --button-color: #2196F3;
+    --button-text-color: #fff;
+    --font-family: 'Roboto', sans-serif;
+    --font-color: #333;
+    --label-font-size: 16px;
+    --label-font-weight: 500;
+    --select-font-size: 16px;
+    --select-font-weight: 400;
+    --select-padding: 10px;
+}
+
+.custom-radio {
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+}
+
+.custom-radio.selected {
+    background-color: dodgerblue;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #8ce0f5;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+
+}
+
+form button {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2196F3;
+    color: white;
+    margin-bottom: 10px;
+}
+
+form input {
+    margin-bottom: 10px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-info-button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2196F3;
+    color: white;
+}
+
+.profile-info form button img {
+    width: 30px;
+    height: 30px;
+    border-radius: 0%;
+}
+
+.container-game-mode {
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container-game-mode button {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2196F3;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.container-game-mode a button {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2196F3;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.container-game-mode a button:hover {
+    opacity: 0.8;
+}
+
+.return-link {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.return-image {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(261deg) brightness(103%) contrast(102%);
+}
+
+.form-container {
+    width: auto;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.form-group-game-options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.game-options-label {
+    margin-bottom: 10px;
+    font-size: var(--label-font-size);
+    font-weight: var(--label-font-weight);
+    color: var(--font-color);
+}
+
+.custom-select {
+    width: 50%;
+    padding: var(--select-padding);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: var(--select-font-size);
+    font-weight: var(--select-font-weight);
+    color: var(--font-color);
+    background-color: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px 10px;
+    text-align: center;
+}
+
+.startGameButton {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.startGameButton:hover {
+    background-color: var(--primary-color-hover);
+}

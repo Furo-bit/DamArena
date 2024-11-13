@@ -1,0 +1,57 @@
+image: maven:latest
+
+# Definizione delle fasi della pipeline
+stages:
+  - build
+  - test
+  - documentation
+  - deploy
+  - security
+
+# Variabile per il percorso del progetto
+variables:
+  PROJECT_DIR: "damarena"  # Sostituisci con il percorso corretto se diverso
+
+# Fase di build
+build:
+  stage: build
+  script:
+    - cd $PROJECT_DIR
+    - mvn clean compile
+
+# Fase di test
+test:
+  stage: test
+  script:
+    - cd $PROJECT_DIR
+    - mvn test
+
+# Fase di generazione della documentazione
+documentation:
+  stage: documentation
+  script:
+    - cd $PROJECT_DIR
+    - mvn javadoc:javadoc
+  artifacts:
+    paths:
+      - $PROJECT_DIR/target/site/apidocs
+
+# Fase di deploy
+deploy:
+  stage: deploy
+  script:
+    - cd $PROJECT_DIR
+    - mvn package -DskipTests
+  artifacts:
+    paths:
+      - $PROJECT_DIR/target/*.jar
+      - $PROJECT_DIR/target/*.war
+
+
+# Fase di verifica della sicurezza, utilizzando OWASP Dependency Check
+security:
+  stage: security
+  script:
+    - cd $PROJECT_DIR
+    - mvn verify -Dnvd.apiKey=${NVD_API_key}
+  allow_failure: true

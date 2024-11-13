@@ -1,0 +1,136 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #066778, #ff9a9e);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+}
+
+.container {
+    width: 739px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transform: translatey(-50%);
+    top: 50%;
+    position: absolute;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.return-link {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+}
+
+.return-image {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(261deg) brightness(103%) contrast(102%);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #8ce0f5;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.unfollow-button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    background: #E53935;
+}
+
+.unfollow-button-td {
+    text-align: center;
+}
+
+.follow-button {
+    width: auto;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2196F3;
+    color: white;
+    margin-left: 100px;
+}
+
+.settings {
+    position: absolute;
+    right: 4%;
+    top: 2%;
+}
+
+.settings-menu {
+    display: none;
+    position: absolute;
+    right: 2%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.settings-menu form button {
+    background-color: transparent;
+    border: none;
+    color: red;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0px;
+}

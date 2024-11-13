@@ -1,0 +1,128 @@
+.custom-radio {
+    display: inline-block;
+    width: 80px;
+    height: 40px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+}
+
+.custom-radio.selected {
+    background-color: dodgerblue;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #8ce0f5;
+    text-align: center;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+form button {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #000;
+    color: white;
+}
+
+form input {
+    margin-bottom: 10px;
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.profile-info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.container-game-mode {
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container-game-mode form button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2196F3;
+    color: white;
+}
+
+.container-game-mode a button {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2196F3;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.container-game-mode a button:hover {
+    opacity: 0.8;
+}
+
+.follow-button[disabled] {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+    background-color: #ddd;
+    cursor: not-allowed;
+}
